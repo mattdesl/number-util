@@ -1,0 +1,11 @@
+{
+  "name": "number-util",
+  "version": "0.0.0",
+  "description": "Float to int bits and back",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt DesLauriers <dave.des@gmail.com>",
+  "license": "BSD-2-Clause"
+}
