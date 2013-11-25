@@ -2,16 +2,25 @@
 
 The following methods are exported:
 
-- intBitsToFloat
+- `intBitsToFloat`
 	- Returns a float for the given int bits.
-- floatToIntBits
+- `floatToIntBits`
 	- Returns int bits for the given float.
-- intToFloatColor
+- `intToFloatColor`
 	- Returns a single float representing the 
 	given ABGR integer. Some precision is lost.
-- colorToFloat
+- `colorToFloat`
 	- Returns a single float representing the
 	given R, G, B, and A bytes (0 - 255). Some precision is lost.
+
+# example
+
+```javascript
+var util = require('number-util');
+
+//packs the RGBA color red into a single float
+var color = util.colorToFloat(255, 0, 0, 255);
+```
 
 # use
 

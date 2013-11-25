@@ -4,9 +4,9 @@ var float32 = new Float32Array(int8.buffer, 0, 1);
 
 /**
  * A singleton for number utilities. 
- * @class NumberUtils
+ * @class NumberUtil
  */
-var NumberUtils = function() {
+var NumberUtil = function() {
 
 };
 
@@ -20,7 +20,7 @@ var NumberUtils = function() {
  * @param  {Number} i the int to cast
  * @return {Number}   the float
  */
-NumberUtils.intBitsToFloat = function(i) {
+NumberUtil.intBitsToFloat = function(i) {
 	int32[0] = i;
 	return float32[0];
 };
@@ -34,7 +34,7 @@ NumberUtils.intBitsToFloat = function(i) {
  * @param  {Number} f the float to cast
  * @return {Number}   the int bits
  */
-NumberUtils.floatToIntBits = function(f) {
+NumberUtil.floatToIntBits = function(f) {
 	float32[0] = f;
 	return int32[0];
 };
@@ -46,8 +46,8 @@ NumberUtils.floatToIntBits = function(f) {
  * @static
  * @param {Number} value an ABGR packed integer
  */
-NumberUtils.intToFloatColor = function(value) {
-	return NumberUtils.intBitsToFloat( value & 0xfeffffff );
+NumberUtil.intToFloatColor = function(value) {
+	return NumberUtil.intBitsToFloat( value & 0xfeffffff );
 };
 
 /**
@@ -62,9 +62,9 @@ NumberUtils.intToFloatColor = function(value) {
  * @param {Number} a the Alpha byte (0 - 255)
  * @return {Float32}  a Float32 of the RGBA color
  */
-NumberUtils.colorToFloat = function(r, g, b, a) {
+NumberUtil.colorToFloat = function(r, g, b, a) {
 	var bits = (a << 24 | b << 16 | g << 8 | r);
-	return NumberUtils.intToFloatColor(bits);
+	return NumberUtil.intToFloatColor(bits);
 };
 
-module.exports = NumberUtils;
+module.exports = NumberUtil;
