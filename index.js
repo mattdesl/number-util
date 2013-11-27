@@ -75,7 +75,7 @@ NumberUtil.colorToFloat = function(r, g, b, a) {
  * @return {Boolean}   true if power-of-two
  */
 NumberUtil.isPowerOfTwo = function(n) {
-	return (x & (x - 1)) == 0;
+	return (n & (n - 1)) == 0;
 };
 
 /**
@@ -91,7 +91,7 @@ NumberUtil.nextPowerOfTwo = function(n) {
 	n |= n >> 4;
 	n |= n >> 8;
 	n |= n >> 16;
-	return n++;
+	return n+1;
 };
 
 module.exports = NumberUtil;
