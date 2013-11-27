@@ -91,7 +91,7 @@ NumberUtil.nextPowerOfTwo = function(n) {
 	n |= n >> 4;
 	n |= n >> 8;
 	n |= n >> 16;
-	n++;
+	return n++;
 };
 
 module.exports = NumberUtil;
