@@ -12,6 +12,10 @@ The following methods are exported:
 - `colorToFloat`
 	- Returns a single float representing the
 	given R, G, B, and A bytes (0 - 255). Some precision is lost.
+- `isPowerOfTwo`
+	- Returns true if the number is a power-of-two size
+- `nextPowerOfTwo`
+	- Returns the next highest power-of-two size from the given number
 
 # example
 
