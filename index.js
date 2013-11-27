@@ -67,4 +67,31 @@ NumberUtil.colorToFloat = function(r, g, b, a) {
 	return NumberUtil.intToFloatColor(bits);
 };
 
+/**
+ * Returns true if the number is a power-of-two.
+ *
+ * @method  isPowerOfTwo
+ * @param  {Number}  n the number to test
+ * @return {Boolean}   true if power-of-two
+ */
+NumberUtil.isPowerOfTwo = function(n) {
+	return (x & (x - 1)) == 0;
+};
+
+/**
+ * Returns the next highest power-of-two from the specified number. 
+ * 
+ * @param  {Number} n the number to test
+ * @return {Number}   the next highest power of two
+ */
+NumberUtil.nextPowerOfTwo = function(n) {
+	n--;
+	n |= n >> 1;
+	n |= n >> 2;
+	n |= n >> 4;
+	n |= n >> 8;
+	n |= n >> 16;
+	n++;
+};
+
 module.exports = NumberUtil;
