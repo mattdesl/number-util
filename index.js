@@ -75,7 +75,7 @@ NumberUtil.colorToFloat = function(r, g, b, a) {
  * @return {Boolean}   true if power-of-two
  */
 NumberUtil.isPowerOfTwo = function(n) {
-	return (n & (n - 1)) == 0;
+	return (n & (n - 1)) === 0;
 };
 
 /**
