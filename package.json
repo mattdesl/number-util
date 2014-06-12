@@ -7,5 +7,30 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Matt DesLauriers <dave.des@gmail.com>",
-  "license": "BSD-2-Clause"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattdesl/number-util.git"
+  },
+  "keywords": [
+    "pow",
+    "npot",
+    "power",
+    "of",
+    "two",
+    "next",
+    "non",
+    "color",
+    "float",
+    "bits",
+    "int",
+    "rgba",
+    "argb",
+    "abgr",
+    "rgb",
+    "bgr"
+  ],
+  "bugs": {
+    "url": "https://github.com/mattdesl/number-util/issues"
+  }
 }
