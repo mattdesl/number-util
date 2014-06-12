@@ -1,6 +1,6 @@
 {
   "name": "number-util",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Float to int bits and back",
   "main": "index.js",
   "scripts": {
